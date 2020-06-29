@@ -12,7 +12,6 @@ export const useFindFilms = (offsetNumber) => {
             params: { page: offsetNumber }
         })
         .then(res => {
-            console.log(res.data.results);
             setData(data.concat(res.data.results));
         });
         // eslint-disable-next-line
