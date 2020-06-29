@@ -5,7 +5,7 @@ export const useFindFilms = (offsetNumber) => {
 
     const [data, setData] = useState([]);
 
-     useEffect(() => {
+    useEffect(() => {
         axios({
             method: 'GET',
             url: 'https://api.themoviedb.org/3/movie/top_rated?api_key=9833140e79826fa84bf24c1dda278eb6&language=en-US',
